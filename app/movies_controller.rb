@@ -30,6 +30,7 @@ def can_be_created_in_a_block(args = { title: "Iron Man", release_date: 2008, di
     movie.datetime = args[:release_date]
     movie.director = args[:director]
   end
+  movie.save
 end
 
 def can_get_the_first_item_in_the_database
