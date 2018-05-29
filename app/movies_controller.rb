@@ -26,7 +26,9 @@ end
 
 def can_be_created_in_a_block(args = { title: "Iron Man", release_date: 2008, director: "Jon Favreau" })
   Movie.create do |m|
-    __
+    movie.string = args[:title]
+    movie.datetime = args[:release_date]
+    movie.director = args[:director]
   end
 end
 
