@@ -1,6 +1,6 @@
 class CreateMovies < ActiveRecord::Migration[5.1]
 
-  def change 
+  def change
     create_table :movies do |t|
       t.string :title
       t.datetime :release_date
@@ -9,4 +9,5 @@ class CreateMovies < ActiveRecord::Migration[5.1]
       t.boolean:in_theaters
     end
   end
-  
+
+end
