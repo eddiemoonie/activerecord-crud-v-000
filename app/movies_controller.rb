@@ -83,7 +83,7 @@ def can_update_multiple_items_at_once
   end
 
   Movie.all.each do |i|
-    movie.update(title: "A Movie")
+    i.update(title: "A Movie")
   end
 
 end
